@@ -1,0 +1,38 @@
+
+
+// If you want to use display Flex and centralize items.
+@mixin flexItems($justify: null, $align: null) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// If you want to use color, font size and font weight. You can use ut.
+@mixin makeColorFix ($color: null, $size: null, $weight: null) {
+    color: map-get($colors, $color);
+    font-size: map-get($fonts, $size);
+    font-weight: map-get($fonts, $weight);
+}
+
+// If you want to use display Flex and Colum direction. You can also add Gap using it.
+@mixin maekFlexForColum($gap:null) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+} 
+
+// If you want to use display Flex and Row direction. You can also add Gap using it.
+@mixin makeFlexForRow ($gap:null) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+} 
+
+
+// If you want to reset your component
+@mixin inheritDimensions {
+    max-width: inherit;
+    max-height: inherit;
+    min-width: inherit;
+    min-height: inherit;
+  }
