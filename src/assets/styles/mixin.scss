@@ -15,7 +15,7 @@
 }
 
 // If you want to use display Flex and Colum direction. You can also add Gap using it.
-@mixin maekFlexForColum($gap:null) {
+@mixin makeFlexForColum($gap:null) {
     display: flex;
     flex-direction: column;
     gap: $gap;

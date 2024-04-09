@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixin.scss";
+
+.topBannerHeaderEQ1{
+    @include flexItems(space-between, center);
+    padding: 15px 34px;
+    background-color: map-get($colors, secondary-color-1) ;
+}
+
+.topBannerHeaderEQ1 .catchContactInfo{
+    @include flexItems(null, center);
+    gap: 30px;
+}
+
+.topBannerHeaderEQ1 .socialMedias{
+    @include flexItems(null, center);
+    
+    gap: 30px;
+
+    .mediaIcons{
+        @include makeFlexForRow(5px);
+        align-items: center;
+        gap: 12px;
+        .imgMedia{
+            @include flexItems(center, center);
+            width: 16px;
+            height: 16px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+   
+}

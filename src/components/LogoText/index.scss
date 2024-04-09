@@ -1,0 +1,27 @@
+@import "../../assets//styles/mixin.scss";
+@import "../../assets/styles/variables.scss";
+
+// Writing default component style
+.LogoTextEQ1 {
+  @include makeFlexForRow(5px);
+  align-items: center;
+}
+.LogoTextEQ1 {
+  .LogoIcon {
+    width: 16px;
+    height: 16px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .LogoTextEQ1Text {
+    /* h6 */
+    @include makeColorFix(light-text-color, paragraph14, TopWeight);
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    display: inline;
+  }
+}
