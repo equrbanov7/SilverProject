@@ -1,0 +1,19 @@
+.BasketItems {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+    .LogoTextEQ1{
+        gap: 6px;
+    }
+  .LogoTextEQ1 .LogoTextEQ1Text {
+    color: rgb(183, 50, 37);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    display: initial;
+  }
+}

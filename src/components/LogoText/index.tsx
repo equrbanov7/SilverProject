@@ -11,7 +11,7 @@ import "./index.scss";
 //Props Types
 
 interface LogoTextProps {
-  Info: string;
+  Info?: string;
   Icon?: string;
 }
 
@@ -26,8 +26,8 @@ const LogoText: React.FC<LogoTextProps> = ({Info, Icon}) => {
       </div>
       }
       
-
-      <h6 className="LogoTextEQ1Text">{Info}</h6>
+      {Info && <h6 className="LogoTextEQ1Text">{Info}</h6> }
+      
     </div>
   );
 };

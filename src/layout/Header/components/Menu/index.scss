@@ -1,0 +1,20 @@
+.MenuNavbarEQ1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 38px;
+  margin-top: 12px;
+
+  .LogoPage {
+    h3 {
+      /* h3 */
+      color: rgb(37, 43, 66);
+      font-family: Libre Baskerville;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0.1px;
+      text-align: left;
+    }
+  }
+}
